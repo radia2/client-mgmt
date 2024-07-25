@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Management</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Client Management</h1>
+
+<!--Create a Client -->
+<h2>Create Client</h2>
+<form id="create-client-form">
+    <input type="text" name="apiKey" placeholder="API Key" required>
+    <input type="text" name="clientName" placeholder="Client Name" required>
+    <input type="text" name="network" placeholder="Network" required>
+    <input type="text" name="providers" placeholder="Providers (comma separated)" required>
+    <input type="text" name="publicKey" placeholder="Public Key (optional)">
+    <button type="submit">Create Client</button>
+</form>
+<div id="create-client-result"></div>
+
+<!-- update a client -->
+    <section>
+        <h2>Update an Existing Client</h2>
+        <form id="update-client-form">
+            <label for="update-client-name">Current Client Name:</label>
+            <input type="text" id="update-client-name" name="currentClientName" required><br>
+
+            <label for="updated-client-name">New Client Name:</label>
+            <input type="text" id="updated-client-name" name="newClientName" required><br>
+
+            <label for="update-providers">Providers (comma-separated):</label>
+            <input type="text" id="update-providers" name="providers" required><br>
+
+            <button type="submit">Update Client</button>
+        </form>
+    </section>
+
+    <!-- Get Client Info -->
+    <h2>Get Client Info</h2>
+    <form id="get-client-form">
+        <input type="text" id="get-client-name" name="client" placeholder="Client Name" required>
+        <input type="text" id="api-key" name="apiKey" placeholder="API Key" required>
+        <button type="submit">Get Client Info</button>
+    </form>
+    <div id="get-client-result"></div>
+
+    <script src="/static/js/clientMgmt.js"></script>
+</body>
+</html>
