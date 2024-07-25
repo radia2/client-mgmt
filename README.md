@@ -12,15 +12,15 @@ This project provides a web interface for managing clients using the Arianee Cus
 ## Installation
 
 1. **Clone the repository:**
-   ```bash
-  git clone https://github.com/radia2/client-mgmt.git
-  cd client-mgmt
-
+```bash
+git clone https://github.com/radia2/client-mgmt.git
+cd client-mgmt
+```
 
 2. **Set up a virtual environment:**
   ```bash
   python3 -m venv venv
-  source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+  source venv/bin/activate  # On windows use: venv\Scripts\activate
 
 ```
 3. **Install the required dependencies**
